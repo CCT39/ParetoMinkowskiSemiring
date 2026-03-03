@@ -2,13 +2,15 @@
 
 [English Version](#english-version) | [正體中文版](#chinese-version)
 
+***
+
 <a name="english-version"></a>
 
-This repository contains the LaTeX source code and associated assets for the paper submitted to **SIGBOVIK 2026**. 
+This repository contains the $\LaTeX$ source code and associated assets for the paper submitted to **SIGBOVIK 2026**. 
 
-## Abstract (Brief)
+## Abstract
 We revisit the score maximization problem in an arcade rhythm game: Hatsune Miku: Project DIVA Arcade (PDA), previously argued in a companion manuscript to be polynomial-time solvable and to lie in $NC^2$ via parallel transfer-function composition. We observe that the underlying computation possesses a natural algebraic structure: the set of Pareto frontiers over non-negative integer pairs forms a semiring, specifically an additively idempotent semiring (dioid), under union-then-Pareto-prune as addition and Minkowski-sum-then-Pareto-prune as multiplication.
-We call this the Pareto-Minkowski semiring (or, in honour of its application domain, the Hatsune semiring). Under this lens, the transfer-function composition becomes iterated matrix multiplication over a semiring, directly connecting rhythm game optimization to the classical theory of algebraic path problems. We further refine the complexity classification by showing that the decision version lies in NL and the search version in $FL^{NL}$, obtaining the tighter upper bound of NL within $NC^2$. These results demonstrate that SEGA's scoring system, while appearing fiendishly complex to players, inhabits a remarkably well-studied algebraic and complexity-theoretic landscape.
+We call this the Pareto-Minkowski semiring (or, in honour of its application domain, the Hatsune semiring). Under this lens, the transfer-function composition becomes iterated matrix multiplication over a semiring, directly connecting rhythm game optimization to the classical theory of algebraic path problems. We further refine the complexity classification by showing that the decision version lies in $NL$ and the search version in $FL^{NL}$, obtaining the tighter upper bound of $NL$ within $NC^2$. These results demonstrate that SEGA's scoring system, while appearing fiendishly complex to players, inhabits a remarkably well-studied algebraic and complexity-theoretic landscape.
 
 > "There is no excuse to name an algebraic structure after a #39c5bb-haired virtual singer, ...unless it yields an efficient parallel algorithm."
 
@@ -52,14 +54,14 @@ pdflatex paper.tex
 * **Game Assets**: User interface elements and character models from Hatsune Miku: Project DIVA Arcade are the property of SEGA and Crypton Future Media, INC..
 * **Fair Use Notice**: These assets are included strictly for academic analysis and illustrative purposes under Fair Use guidelines.
 
-
----
-
+***
 
 <a name="chinese-version"></a>
 
+本存放庫包含提交給**SIGBOVIK 2026**的論文，其 $\LaTeX$ 原始碼及相關資源。
+
 ## 摘要
-我們重新審視了大型電玩節奏遊戲《初音未來 Project DIVA Arcade》（PDA）中的得分最大化問題。先前在相關手稿中曾論證該問題具有多項式時間可解性，且能透過平行轉移函數組合歸類於 $NC^2$ 複雜度類別。我們觀察到其底層計算具備一種天然的代數結構：非負整數對上的帕雷托前沿（Pareto frontiers）集合，在「聯集後進行Pareto剪枝」作為加法，以及「閔可夫斯基和（Minkowski sum）後進行Pareto剪枝」作為乘法的運算下，構成了一個半環（semiring），具體而言是一個加法冪等半環（additively idempotent semiring，即dioid）。我們將其稱為「Pareto-Minkowski半環」（或為了向其應用領域致敬，稱之為初音半環Hatsune semiring）。在此視角下，轉移函數的組合轉化為半環上的矩陣鏈乘法，直接將節奏遊戲的最佳化問題與代數路徑問題（algebraic path problems）的古典理論聯繫起來。我們進一步細化了複雜度分類，證明其判定版本（decision version）屬於 $NL$，而搜尋版本（search version）屬於 $FL^{NL}$，從而在 $NC^2$ 之內獲得了更緊緻的 $NL$ 上界。這些結果顯示，儘管SEGA的計分系統對玩家而言看似極度複雜，但其實際上處於一個研究極為透徹的代數與複雜度理論範疇之中。
+我們重新審視了大型電玩節奏遊戲《初音未來 Project DIVA Arcade》（PDA）中的得分最大化問題。先前在相關手稿中曾論證該問題具有多項式時間可解性，且能透過平行轉移函數組合歸類於 $NC^2$ 複雜度類別。我們觀察到其底層計算具備一種天然的代數結構：非負整數對上的帕雷托前沿（Pareto frontier）集合，在「聯集後進行Pareto剪枝」作為加法，以及「閔可夫斯基和（Minkowski sum）後進行Pareto剪枝」作為乘法的運算下，構成了一個半環（semiring），具體而言是一個加法冪等半環（additively idempotent semiring，即dioid）。我們將其稱為「Pareto-Minkowski半環」（或為了向其應用領域致敬，稱之為初音半環Hatsune semiring）。在此視角下，轉移函數的組合轉化為半環上的矩陣鏈乘法，直接將節奏遊戲的最佳化問題與代數路徑問題（algebraic path problems）的古典理論聯繫起來。我們進一步細化了複雜度分類，證明其判定版本（decision version）屬於 $NL$，而搜尋版本（search version）屬於 $FL^{NL}$，從而在 $NC^2$ 之內獲得了更緊緻的 $NL$ 上界。這些結果顯示，儘管SEGA的計分系統對玩家而言看似極度複雜，但其實際上處於一個研究極為透徹的代數與複雜度理論範疇之中。
 
 > 「要不是它能產生高效的平行演算法，誰會想用 #39c5bb 髮色的車欠骨豊來幫代數結構取名？」
 
@@ -70,11 +72,11 @@ pdflatex paper.tex
 本專案設計運行於標準TeX Live環境。
 
 ### 1. 字型及排版
-* **主要字型**: Linux Libertine (以`\usepackage{libertine}`引用).
-* **CJK支援**: 由 `CJKutf8` 套件處理。包含：
-    * **正體中文**: `bsmi`。
-    * **日文**: `min`。
-* **需求**: 只要TeX發行版包含標準的`libertine`和`latex-cjk-all`巨集包，就不需要外部的`.otf`或`.ttf`檔案。
+* **主要字型**：Linux Libertine (以`\usepackage{libertine}`引用).
+* **CJK支援**：由`CJKutf8`套件處理。包含：
+    * **正體中文**：`bsmi`。
+    * **日文**：`min`。
+* **需求**：只要TeX發行版包含標準的`libertine`和`latex-cjk-all`巨集包，就不需要外部的`.otf`或`.ttf`檔案。
 
 ### 2. 核心代數恆等式
 動態規劃方法的最適性依賴以下因式分解恆等式：
@@ -102,5 +104,5 @@ pdflatex paper.tex
 
 ## 版權聲明（License）
 * **研究內容與程式碼**：© 2026 作者。
-* **遊戲資產**：「初音未來 Project DIVA Arcade」之UI與角色模組版權等歸SEGA及Crypton Future Media, INC.所有。
+* **遊戲資產**：《初音未來 Project DIVA Arcade》之UI與角色模組版權等歸SEGA及Crypton Future Media, INC.所有。
 * **合理使用聲明**：本研究基於學術分析目的進行合理使用。
