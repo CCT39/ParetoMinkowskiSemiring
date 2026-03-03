@@ -61,7 +61,7 @@ pdflatex paper.tex
 本存放庫包含提交給**SIGBOVIK 2026**的論文，其 $\LaTeX$ 原始碼及相關資源。
 
 ## 摘要
-我們重新審視了大型電玩節奏遊戲《初音未來 Project DIVA Arcade》（PDA）中的得分最大化問題。先前在相關手稿中曾論證該問題具有多項式時間可解性，且能透過平行轉移函數組合歸類於 $NC^2$ 複雜度類別。我們觀察到其底層計算具備一種天然的代數結構：非負整數對上的帕雷托前沿（Pareto frontier）集合，在「聯集後進行Pareto剪枝」作為加法，以及「閔可夫斯基和（Minkowski sum）後進行Pareto剪枝」作為乘法的運算下，構成了一個半環（semiring），具體而言是一個加法冪等半環（additively idempotent semiring，即dioid）。我們將其稱為「Pareto-Minkowski半環」（或為了向其應用領域致敬，稱之為初音半環Hatsune semiring）。在此視角下，轉移函數的組合轉化為半環上的矩陣鏈乘法，直接將節奏遊戲的最佳化問題與代數路徑問題（algebraic path problems）的古典理論聯繫起來。我們進一步細化了複雜度分類，證明其判定版本（decision version）屬於 $NL$，而搜尋版本（search version）屬於 $FL^{NL}$，從而在 $NC^2$ 之內獲得了更緊緻的 $NL$ 上界。這些結果顯示，儘管SEGA的計分系統對玩家而言看似極度複雜，但其實際上處於一個研究極為透徹的代數與複雜度理論範疇之中。
+我們重新審視了節奏遊戲街機《初音未來 Project DIVA Arcade》（PDA）中的得分最大化問題。先前在相關手稿中曾論證該問題具有多項式時間可解性，且能透過平行轉移函數組合歸類於 $NC^2$ 複雜度類別。我們觀察到其底層計算具備一種天然的代數結構：非負整數對上的帕雷托前沿（Pareto frontier）集合，在「聯集後進行Pareto剪枝」作為加法，以及「閔可夫斯基和（Minkowski sum）後進行Pareto剪枝」作為乘法的運算下，構成了一個半環（semiring），具體而言是一個加法冪等半環（additively idempotent semiring，即dioid）。我們將其稱為「Pareto-Minkowski半環」（或為了向其應用領域致敬，稱之為初音半環Hatsune semiring）。在此視角下，轉移函數的組合轉化為半環上的矩陣鏈乘法，直接將節奏遊戲的最佳化問題與代數路徑問題（algebraic path problems）的古典理論聯繫起來。我們進一步細化了複雜度分類，證明其判定版本（decision version）屬於 $NL$，而搜尋版本（search version）屬於 $FL^{NL}$，從而在 $NC^2$ 之內獲得了更緊緻的 $NL$ 上界。這些結果顯示，儘管SEGA的計分系統對玩家而言看似極度複雜，但其實際上處於一個研究極為透徹的代數與複雜度理論範疇之中。
 
 > 「要不是它能產生高效的平行演算法，誰會想用 #39c5bb 髮色的車欠骨豊來幫代數結構取名？」
 
