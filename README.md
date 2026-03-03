@@ -18,14 +18,14 @@ We call this the Pareto-Minkowski semiring (or, in honour of its application dom
 
 ## Technical Specifications
 
-This project is designed for a standard TeX Live environment. 
+This project is designed for a standard $\TeX$ Live environment. 
 
 ### 1. Typography & Fonts
 * **Main Typeface**: Linux Libertine (via `\usepackage{libertine}`).
 * **CJK Support**: Handled by the `CJKutf8` package.
     * **Traditional Chinese**: `bsmi` family.
     * **Japanese**: `min` family.
-* **Requirements**: No external `.otf` or `.ttf` files are necessary as long as the TeX distribution includes the standard `libertine` and `latex-cjk-all` packages.
+* **Requirements**: No external `.otf` or `.ttf` files are necessary as long as the $\TeX$ distribution includes the standard `libertine` and `latex-cjk-all` packages.
 
 ### 2. Core Algebraic Identity
 The optimality of the dynamic programming approach relies on the following factoring identity:
@@ -39,7 +39,7 @@ Visual evidence was captured from a public YouTube livestream of a local arcade 
 
 ## Build Instructions
 
-To reproduce the final PDF, please use the following compilation recipe:
+To reproduce the final PDF, please use the following compilation recipe in $\TeX$ Live environment:
 
 ```bash
 pdflatex paper.tex
@@ -69,14 +69,14 @@ pdflatex paper.tex
 
 ## 技術規格
 
-本專案設計運行於標準TeX Live環境。
+本專案設計運行於標準 $\TeX$ Live環境。
 
 ### 1. 字型及排版
 * **主要字型**：Linux Libertine (以`\usepackage{libertine}`引用).
 * **CJK支援**：由`CJKutf8`套件處理。包含：
     * **正體中文**：`bsmi`。
     * **日文**：`min`。
-* **需求**：只要TeX發行版包含標準的`libertine`和`latex-cjk-all`巨集包，就不需要外部的`.otf`或`.ttf`檔案。
+* **需求**：只要 $\TeX$ 發行版包含標準的`libertine`和`latex-cjk-all`巨集包，就不需要外部的`.otf`或`.ttf`檔案。
 
 ### 2. 核心代數恆等式
 動態規劃方法的最適性依賴以下因式分解恆等式：
@@ -89,9 +89,9 @@ $$\text{Pareto}(X +_M Y) = \text{Pareto}(\text{Pareto}(X) +_M Y)$$
 
 ---
 
-## Build Instructions
+## 編譯說明
 
-編譯指令請在具備TeX Live環境的終端機執行：
+若要產生最終的PDF文件，請於 $\TeX$ Live環境使用以下編譯方法：
 
 ```bash
 pdflatex paper.tex
