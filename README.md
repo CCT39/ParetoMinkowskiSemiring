@@ -53,6 +53,10 @@ pdflatex paper.tex
 * **Research Content & Code**: © 2026 The Author.
 * **Game Assets**: User interface elements and character models from Hatsune Miku: Project DIVA Arcade are the property of SEGA and Crypton Future Media, INC..
 * **Fair Use Notice**: These assets are included strictly for academic analysis and illustrative purposes under Fair Use guidelines.
+* **Licensing Notice**:
+    * **Research Papers**: This manuscript is provided under CC BY-NC-ND 4.0, currently under review by and SIGBOVIK.
+    * **Source Code**: All source code is currently Proprietary (**All Rights Reserved**) to protect the research priority of the independent author.
+
 
 ***
 
@@ -105,3 +109,6 @@ pdflatex paper.tex
 * **研究內容與程式碼**：© 2026 作者。
 * **遊戲資產**：《初音未來 Project DIVA Arcade》之UI與角色模組版權等歸SEGA及Crypton Future Media, INC.所有。
 * **合理使用聲明**：本研究基於學術分析目的進行合理使用。
+* **許可聲明**：
+    * **研究論文**：本論文以 CC BY-NC-ND 4.0 許可發布。目前正在接受SIGBOVIK的審稿。
+    * **原始碼**：所有原始程式碼目前均為專有程式碼（**保留所有權利**），以保護獨立作者的研究優先權。
