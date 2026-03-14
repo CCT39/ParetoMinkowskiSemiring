@@ -42,10 +42,10 @@
 \usepackage{CJKutf8}
 \usepackage[
     colorlinks=true, % 開啟文字上色，關閉預設超醜的彩色方框
-    linkcolor=MikuCyan!85!black, % 內部連結
-    citecolor=MikuCyan!85!black, % 參考文獻連結
-    urlcolor=MikuCyan!85!black, % 外部網址連結
-    filecolor=MikuCyan!85!black, % 本地檔案連結
+    linkcolor=MikuCyan, % 內部連結
+    citecolor=MikuCyan, % 參考文獻連結
+    urlcolor=MikuCyan, % 外部網址連結
+    filecolor=MikuCyan, % 本地檔案連結
     pdfborder={0 0 0} % 確保在某些舊版閱讀器中也不會出現邊框
 ]{hyperref}
 
@@ -87,8 +87,13 @@ We further refine the complexity classification by showing that the decision ver
 These results demonstrate that SEGA's scoring system, while appearing fiendishly complex to players, inhabits a remarkably well-studied algebraic and complexity-theoretic landscape.
 \end{abstract}
 
+\smallskip
+\noindent\textbf{Keywords:} semiring theory, dioid, Pareto optimality, Minkowski sum, algebraic path problems, multi-objective optimization, nondeterministic logspace (NL), $\mathrm{FL^{NL}}$, $\mathrm{NC}^2$, rhythm games, Hatsune Miku
+
 % ================================================================
 \section{Introduction: The Odd One Out}
+
+Hatsune Miku is, to our knowledge, the first virtual pop star whose scoring system has been rigorously shown to inhabit $\mathrm{FL^{NL}}$.
 
 In the vast majority of arcade rhythm games: \textit{maimai}, \textit{CHUNITHM}, \textit{Sound Voltex}, and their brethren, the path to the highest score is utterly boring from a complexity-theoretic standpoint.
 Each note is locally independent: hitting it perfectly is always at least as good as any alternative.
@@ -696,11 +701,17 @@ Whether this reflects deep game design intuition, cosmic coincidence, or divine 
 % ================================================================
 \section*{Acknowledgements}
 
-The author thanks the anonymous reviewers for their comments, and the \textit{Project DIVA Arcade} community for decades of empirical research into what this paper calls ``constrained bi-objective optimization on a layered DAG,'' a phrase none of them would ever use voluntarily. Further thanks are due to the SEGA engineers for inadvertently turning a pop-culture rhythm game into a rigorous exercise in path algebra, and to the Vocaloid producers (\textit{Vocaloid-Ps}) whose relentless BPMs necessitated these computationally cursed charts.
+The author thanks the anonymous reviewers for their comments, and the \textit{Project DIVA Arcade} community for decades of empirical research into what this paper calls ``constrained bi-objective optimization on a layered DAG.'' Further thanks are due to the SEGA engineers for inadvertently turning a pop-culture rhythm game into a rigorous exercise in path algebra, and to the Vocaloid producers (\textit{Vocaloid-Ps}) whose relentless BPMs necessitated these computationally cursed charts.
 
-Special thanks are owed to Hatsune Miku, age 16 forever, who (despite being a virtual character with no legal personhood, no university affiliation, and no h-index) is arguably the principal investigator of this entire line of research. Without her vocal synthesizer lending its name to the game, there would be no Shared Release Constraint, no bi-objective scoring, no Pareto-Minkowski semiring, and certainly no excuse to name an algebraic structure after a \texttt{\#39c5bb}-haired pop idol.
+Special thanks are owed to Hatsune Miku\footnote{%
+  In the online culture surrounding Hatsune Miku, \texttt{39} (\textit{san-kyuu}) pulls double duty: phonetically, it reads as both ``Miku'' and ``thank you.'' The teal in this paper is drawn from Hatsune Miku's official colour, \texttt{\#39c5bb}.}
+(independent researcher, Crypton Future Media, INC., Sapporo; age~16, indefinitely), who, despite holding no doctoral degree, maintaining no institutional affiliation, and possessing an h-index that every academic search engine consistently returns as~0, is nonetheless the de facto principal investigator of this entire line of research.
+H.M.'s documented contributions include:
+(i)~lending her vocal synthesizer to a rhythm game whose scoring system turned out to harbour a dioid in disguise;
+and (ii)~inspiring the Hatsune semiring, the characteristic teal colour scheme, and at least two footnotes in this paper.
+H.M. is supported by no external funding, having apparently declined all grant applications on the grounds that her contract rider specifies payment in leeks.
 
-Any errors in this paper are, of course, entirely the author's own. Miku's performances, unlike our proofs, have never required correction.
+Any errors in this paper are entirely the author's own. Miku's performances, by contrast, have never required a corrigendum.
 
 % ================================================================
 \bibliographystyle{plain}
