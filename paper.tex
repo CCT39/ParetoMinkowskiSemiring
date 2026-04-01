@@ -156,12 +156,12 @@ PDOP Search $\in$ $\mathrm{FL^{NL}}$ & --- & $\checkmark$ \\
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.99\linewidth]{figures/src.png}
-    \caption{Demonstration of the Shared Release Constraint.
+    \caption[]{Demonstration of the Shared Release Constraint.
     Starting from the top-left: The player is simultaneously holding all four buttons, accumulating a \emph{Quadruple Bonus} calculated on a per-frame basis. The next incoming note is a Cross ($\times$), visible in the upper right.
     Centre: A few frames later, the player employs a specialized technique to hit the incoming $\times$ note at the exact moment of releasing the held $\times$ button, achieving a \textsc{COOL} judgement (the highest accuracy and score). However, this release triggers the Shared Release Constraint, causing the scoring for all four simultaneous holds to terminate instantly, despite the other three buttons still being physically held down. The visual bonus indicator bar begins to fade away.
     Bottom-right: Another few frames later, as the next note approaches, the bonus indicator has completely vanished, reflecting the earlier cessation of hold points. \protect\\
     To preserve holds, players must intentionally hit an unheld button (\textsc{WRONG}), or ignore the note (\textsc{WORST}) if all are occupied. This counterintuitive accuracy-for-holds tradeoff may yield a globally \emph{higher} score, driving \emph{Score Attack} routing.\protect\\
-    Footage was captured from a 24-hour public YouTube livestream operated by a local arcade \cite{GamePlayFootage}. Gameplay images are used with the expressed permission of the player (i.e., the author).}
+    Footage was captured from a 24-hour\footnotemark public YouTube livestream operated by a local arcade \cite{GamePlayFootage}. Gameplay images are used with the expressed permission of the player (i.e., the author).}
     \label{fig:src}
 
     % Note to proceedings editor: The 1.5-hour gap in the source footage remains a profound mystery of the universe.
@@ -194,6 +194,9 @@ A chart $\mathcal{C} = (n_1, \ldots, n_m)$ of $m$ notes induces a \emph{layered 
     \item \textbf{Edges.} For each valid action $a$ at note $n_{i+1}$, there is a directed edge from $(i, s)$ to $(i{+}1, s')$ whenever $s' = \mathrm{Trans}(s, n_{i+1}, a)$ and $s'.L > 0$ (the player survives).
     \item \textbf{Weights.} Each edge carries a two-dimensional weight $(\Delta V, \Delta H) \in \mathbb{N}_0^2$, where $\Delta V$ is the total score earned at this step and $\Delta H$ its hold-score component.
 \end{itemize}
+
+% note: 我放在這裡以符合實際排版，實際上這句是跟著圖 figures/src.png 一起的
+\footnotetext{Empirically observed as either 22.5 hours (due to routine nightly downtime) or 0 hours (due to hardware entropy).}
 
 \subsection{The Optimization Problem}
 
